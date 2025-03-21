@@ -19,12 +19,13 @@
 <p><span>心得：上個禮拜班上多了幾位重補修的學長姊，所以老師從基本的建立個人網站及倉儲開始教起。</span></p>
 <h2>w3</h2>
 <h2>w5</h2>
+<p>問題：<span>請用繁體中文詳細說明資料</span></p>
 <div>
 <p><strong>什麼是 Webots？</strong></p>
 <p class="break-words">Webots 是一款專業的開源移動機器人仿真軟件，由 Cyberbotics 公司開發。它提供了一個快速原型設計環境，讓使用者可以在虛擬的 3D 空間中創建具有物理特性的機器人及其環境。Webots 最初由瑞士洛桑聯邦理工學院（EPFL）開發，後於 2018 年 12 月起以 Apache 2.0 許可證開源，廣泛應用於教育、研究和工業領域。它的核心基於開源物理引擎 ODE（Open Dynamics Engine）和 OpenGL 技術，支持 Windows、Linux 和 macOS 操作系統，並兼容多種編程語言，包括 C、C++、Python、Java 和 MATLAB。</p>
 <p class="break-words">簡單來說，Webots 是一個強大的工具，用於模擬機器人的行為、測試控制算法，並在虛擬環境中驗證設計，而無需直接使用實體機器人。</p>
 <hr/>
-<p>我可以用 Webots 做什麼？</p>
+<p><strong>我可以用 Webots 做什麼？</strong></p>
 <p class="break-words">Webots 的功能非常豐富，以下是一些主要用途：</p>
 <ol class="marker:text-secondary">
 <li class="break-words"><strong>機器人設計與建模</strong>：
@@ -63,7 +64,7 @@
 </li>
 </ol>
 <p class="break-words">總之，Webots 適合用來模擬、驗證和優化機器人系統，無論是單一機器人還是多機器人協作場景。</p>
-<hr/>使用 Webots 需要知道什麼？
+<hr/><strong>使用 Webots 需要知道什麼？</strong>
 <p class="break-words">要有效使用 Webots，您需要掌握以下知識和技能：</p>
 <ol class="marker:text-secondary">
 <li class="break-words"><strong>基本電腦操作</strong>：
@@ -98,7 +99,7 @@
 </li>
 </ol>
 <p class="break-words">初學者可以從簡單的任務開始，例如讓一個輪式機器人移動，然後逐步進階到更複雜的應用。</p>
-<hr/>如何獲得 Webots 的用戶支持？
+<hr/><strong>如何獲得 Webots 的用戶支持？</strong>
 <p class="break-words">Webots 提供了多種用戶支持管道：</p>
 <ol class="marker:text-secondary">
 <li class="break-words"><strong>官方文件</strong>：
@@ -126,7 +127,7 @@
 </li>
 </ol>
 <p class="break-words">建議先查閱官方文件和範例，若無法解決問題，再向社區或官方求助。</p>
-<hr/>Webots 仿真中的「世界」（World）是什麼？
+<hr/><strong>Webots 仿真中的「世界」（World）是什麼？</strong>
 <p class="break-words">在 Webots 中，「世界」（World）是指機器人及其環境的 3D 虛擬描述。它是一個完整的仿真場景，包含以下元素：</p>
 <ul class="marker:text-secondary">
 <li class="break-words"><strong>物件描述</strong>：每個物件的位置、方向、幾何形狀、外觀（如顏色、紋理）和物理屬性（如質量、摩擦係數）。</li>
@@ -134,7 +135,7 @@
 <li class="break-words"><strong>文件格式</strong>：世界儲存在 <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">.wbt</span> 文件中，通常位於 Webots 項目的 <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">worlds</span> 子目錄。</li>
 </ul>
 <p class="break-words">世界文件不包含機器人的控制器程式，只指定每個機器人使用的控制器名稱。它定義了仿真的環境和初始條件，例如地面、地形、光線和障礙物。</p>
-<hr/>Webots 中的「控制器」（Controller）是什麼？
+<hr/><strong>Webots 中的「控制器」（Controller）是什麼？</strong>
 <p class="break-words">「控制器」（Controller）是控制 Webots 中機器人行為的程式。它負責：</p>
 <ul class="marker:text-secondary">
 <li class="break-words"><strong>讀取傳感器數據</strong>：如距離傳感器或攝影機的輸入。</li>
@@ -148,7 +149,7 @@
 <li class="break-words"><strong>儲存位置</strong>：控制器源文件和編譯後的文件位於項目的 <span class="text-sm px-1 rounded-sm !font-mono bg-sunset/10 text-rust dark:bg-dawn/10 dark:text-dawn">controllers</span> 子目錄。</li>
 </ul>
 <p class="break-words">例如，一個簡單的控制器可能讓機器人檢測障礙物並轉向避開。同一控制器程式可被多個機器人共用，但每個機器人會啟動獨立的進程。</p>
-<hr/>Webots 中的「監督控制器」（Supervisor Controller）是什麼？
+<hr/><strong>Webots 中的「監督控制器」（Supervisor Controller）是什麼？</strong>
 <p class="break-words">「監督控制器」（Supervisor Controller）是一種特殊類型的控制器，具有更高的權限，用於管理和控制整個仿真環境。它的特點包括：</p>
 <ul class="marker:text-secondary">
 <li class="break-words"><strong>特權操作</strong>：普通控制器只能控制機器人本身，而監督控制器可以執行以下操作：
